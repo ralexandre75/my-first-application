@@ -6,6 +6,10 @@ import Header from './components/header';
 
 export default class App extends React.Component {
 
+  onPressButton() {
+    console.log('press');
+  }
+  
   render() {
     return (
       <View>
@@ -15,6 +19,7 @@ export default class App extends React.Component {
           iconRight
           icon={{ name: 'code' }}
           title="pomme"
+          onPress={this.onPressButton}
         />
       </View>
     );
